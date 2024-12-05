@@ -62,18 +62,6 @@ vector<string>& filter(vector<string>& data)
     return data;
 }
 
-vector<string>& filter(vector<string>& data)
-{
-   for(int i=0;i<data.size();i++)
-    {
-       if(data[i].find('[') !=string::npos)
-            data.erase(data.begin()+i,data.end());
-    }
-
-    data.erase(unique(data.begin(),data.end()),data.end());
-    return data;
-}
-
 vector<int> convert (vector<string> data)
 {
     vector<int> temp;

@@ -29,6 +29,16 @@ vector<int> bgp::get_neibor() const
     return neibor_list;
 }
 
+unsigned int bgp::get_pref() const
+{
+    return preference;
+}
+
+void bgp::set_perf(unsigned int perf)
+{
+    preference = perf;
+}
+
 void bgp::print() const
 {
     cout << index <<" "<< neibor_size << "\n";
